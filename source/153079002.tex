@@ -1,0 +1,65 @@
+% Latex file for PDFLatex, prepared by Rajarshi Bandopadhyay.
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[pdftex,
+            pdfauthor={Rajarshi Bandopadhyay},
+            pdftitle={Pendulum with Friction: Plots of Key Parameters},
+            pdfsubject={Pendulum With Friction},
+            pdfkeywords={Oscillation, Transients, Pendulum, Friction},
+            pdfproducer={pdflatex},
+            pdfcreator={pdflatex}]{hyperref}
+
+\begin{document}
+
+\pdfinfo{
+   /Author (Rajarshi Bandopadhyay)
+   /Title  (Pendulum with Friction: Plots of Key Parameters)
+   /CreationDate (D:20040502195600)
+   /Subject (Pendulum With Friction)
+   /Keywords (Oscillation;Transients;Pendulum;Friction)
+}
+
+\begin{Large} Pendulum with Friction: plots of key parameters \end{Large}
+\begin{flushright}
+- by Rajarshi Bandopadhyay
+\end{flushright}
+
+\paragraph{}
+This project has been made possible by the detailed study of a pendulum under the effect of friction, as performed in \cite{theory}. The aim of the project is to generate plots of two key parameters, namely the instantaneous angle $\theta$ and the instantaneous angular velocity $\omega$, against time as an independent parameter. \\
+These parameters were chosen based on the lectures in \cite{feynman}.
+
+\paragraph{}
+The project is saved on a GitHub repository at the following address: \\
+\textit{https://github.com/Rajarshi-Bandopadhyay/Pendulum}. \\
+The Python files must be run using Python-3. \\
+Parameters used: 
+
+\paragraph{Animations:}
+The ipython notebooks named \textit{animate\_theta} and \textit{animate\_omega} have been used for generating animations. Both require the use of the \textit{theory.py} module, which contains the definition of the \textit{FrictionPendulum} class.
+
+\paragraph{Plots}
+Due to constraints of space, the plots are shown on the page that follows.
+
+\pagebreak
+\begin{figure}[t]
+\title{Plots obtained:}
+
+\includegraphics[scale=0.30]{theta.png} 
+\caption{Angle of the pendulum $\theta$ vs time.}
+
+\includegraphics[scale=0.30]{omega.png}
+\caption{Angular velocity of the pendulum $\omega$ vs time.}
+\end{figure}
+
+\begin{tabular}{c}
+ \\
+ \\
+ \\
+ \\
+ \\
+\end{tabular}
+\bibliographystyle{plain}
+\bibliography{references.bib}
+
+\end{document}
